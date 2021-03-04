@@ -7,17 +7,17 @@
 """
 
 
-def get_even_fibonacci_numbers(min, max):
+def get_even_fibonacci_numbers(max):
     result_list = list()
     fibonacci_nums_list = [1, 2]
 
     for i in fibonacci_nums_list:
         if i >= max:
             break
-        next_num = fibonacci_nums_list[-2] + fibonacci_nums_list[-1]  # сумма 2-х предыдущих чисел
+        next_num = fibonacci_nums_list[-2] + fibonacci_nums_list[-1]
         fibonacci_nums_list.append(next_num)
 
-    for i in fibonacci_nums_list:  # отбор четных чисел
+    for i in fibonacci_nums_list:
         if i % 2 == 0:
             result_list.append(i)
 
@@ -25,5 +25,5 @@ def get_even_fibonacci_numbers(min, max):
 
 
 if __name__ == '__main__':
-    result = get_even_fibonacci_numbers(1, 4000000)
+    result = get_even_fibonacci_numbers(4000000)
     print(result)  # output: 4613732

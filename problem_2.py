@@ -7,12 +7,12 @@
 """
 
 
-def get_even_fibonacci_numbers(max):
+def get_even_fibonacci_numbers(max_limit):
     result_list = list()
     fibonacci_nums_list = [1, 2]
 
     for i in fibonacci_nums_list:
-        if i >= max:
+        if i >= max_limit:
             break
         next_num = fibonacci_nums_list[-2] + fibonacci_nums_list[-1]
         fibonacci_nums_list.append(next_num)

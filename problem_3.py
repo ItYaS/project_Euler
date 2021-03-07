@@ -1,6 +1,3 @@
-import math
-
-
 """             Наибольший простой делитель
 Простые делители числа 13195 - это 5, 7, 13 и 29.
 
@@ -9,14 +6,14 @@ import math
 
 
 def get_largest_prime_factor(num):
-    largest_prime_factor = 0
-    max_limit = math.ceil(math.sqrt(num))
+    i = 2
 
-    for i in range(1, max_limit):
+    while i <= num // 2:
         if num % i == 0:
-            largest_prime_factor = i
+            num /= i
+        i += 1
 
-    return largest_prime_factor
+    return num
 
 
 if __name__ == '__main__':

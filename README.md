@@ -1,2 +1,2 @@
 # Project Euler
-Solving problems from [the project Euler](https://projecteuler.net/archives).
+My solutions for [the project Euler](https://projecteuler.net/archives).
